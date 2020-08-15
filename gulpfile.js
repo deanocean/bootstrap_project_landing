@@ -43,15 +43,6 @@ gulp.task('jade', function() {
     // gulp.src('./source/*.jade')
     gulp.src('./source/!(_)*.jade')
       .pipe(plumber())
-      .pipe(data(function(){
-        let stationData = require('./source/data/stations.json')
-        let menu = require('./source/data/menu.json')
-        let source = {
-          "stationData": stationData,
-          "menu": menu
-        }
-        return source;
-      }))
       .pipe(jade({
         pretty: true
       }))
