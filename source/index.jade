@@ -4,4 +4,224 @@ block navbar
     include partials/navbar.jade
 
 block content
+    header
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+                li(data-target='#carouselExampleIndicators', data-slide-to='1')
+                li(data-target='#carouselExampleIndicators', data-slide-to='2')
+            .carousel-inner
+                .carousel-item.header-carousel-item.bg-cover.active(style="background-image: url('https://images.unsplash.com/photo-1519766030446-ae88fde27309?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80')")
+                    .carousel-caption.d-none.d-md-block.px-2
+                        h5 意外と穴場？！京都で楽しむ水族館デート
+                        p 水族館ではいきものたちが、ふたりの仲をとりもってくれるかもしれません。
+                .carousel-item.header-carousel-item.bg-cover(style="background-image: url('https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')")
+                    .carousel-caption.d-none.d-md-block.px-2
+                        h5 水族館の新しいあり方を提案
+                        p “近づくと、もっと好きになる。”をキーワードに、お客さま、いきもの、スタッフが、もっと近づける水族館を目指しています。
+                .carousel-item.header-carousel-item.bg-cover(style="background-image: url('https://images.unsplash.com/photo-1537858320050-8d60433d1600?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1030&q=80')")
+                    .carousel-caption.d-none.d-md-block.px-2
+                        h5 ゆったり座って観賞できる
+                        p ソファに座って大水槽をゆっくり眺めて二人の時間を過ごせます
+            a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+    .section.bg-info.py-5.text-white
+        .container
+            .row
+                .col-md-4
+                    div.text-center
+                        i.fas.fa-fish.fa-5x
+                    h3.text-center.mt-4 Fish
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore ducimus unde repellat enim volup
+                .col-md-4.mt-5.mt-md-0
+                    div.text-center
+                        i.fas.fa-ship.fa-5x
+                    h3.text-center.mt-4 Ship
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore ducimus unde repellat enim volup
+                .col-md-4.mt-5.mt-md-0
+                    div.text-center
+                        i.fas.fa-water.fa-5x
+                    h3.text-center.mt-4 Water
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident inventore ducimus unde repellat enim volup
+    .section.container-fluid.py-5.bg-light.text-white.position-relative
+        .row
+            .col-md-5.bg-cover.position-absolute(style="top: 0; bottom: 0; background-image: url('https://images.unsplash.com/photo-1436891461396-6df41158de09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');")
+        .container.text-md-dark
+            .row.justify-content-end
+                .col-md-7
+                    h3 Title
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, excepturi? Lorem ipsum dolor sit amet.
+                    a.btn.btn-outline-info More
+                    .row.mt-4
+                        .col-md-6
+                            h4 Item title
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, cum?
+                        .col-md-6
+                            h4 Item title
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, cum?
+    .section.py-5
+        .container
+            h2.text-center Title
+            .row
+                .col-md-6
+                    .d-flex
+                        div
+                            i.fas.fa-swimmer.fa-4x
+                        div.ml-3
+                            h3 subtitle
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, nulla?
+                .col-md-6
+                    .d-flex
+                        div
+                            i.fas.fa-swimmer.fa-4x
+                        div.ml-3
+                            h3 subtitle
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, nulla?
+                .col-md-6
+                    .d-flex
+                        div
+                            i.fas.fa-swimmer.fa-4x
+                        div.ml-3
+                            h3 subtitle
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, nulla?
+                .col-md-6
+                    .d-flex
+                        div
+                            i.fas.fa-swimmer.fa-4x
+                        div.ml-3
+                            h3 subtitle
+                            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, nulla?
+    .section.py-5.bg-light
+        .container
+            .row
+                .col-md-6
+                    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29105.047806081006!2d-21.952128780588595!3d64.15315351209907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x909ee00ab8572141!2sWhales%20of%20Iceland!5e0!3m2!1szh-TW!2sjp!4v1597509449406!5m2!1szh-TW!2sjp', width='100%', height='450', frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0')
+                .col-md-6
+                    form.needs-validation(novalidate)
+                        .form-group
+                            label(for="name") Name*
+                            input#name.form-control(type="text" placeholder="Tell us your name." required)
+                            .invalid-feedback Please write your name.
+                        .form-group
+                            label(for="tel") Tel*
+                            input#tel.form-control(type="tel" placeholder="Tell us your telephone." required)
+                            .invalid-feedback Please write your telephone.
+                        .form-group
+                            label(for="email") Email*
+                            input#email.form-control(type="email" placeholder="Tell us your email." required)
+                            .invalid-feedback Please write your email.
+                        .form-group
+                            label(for="people") People*
+                            input#people.form-control(type="number" placeholder="Tell us how many would come." required)
+                            .invalid-feedback Please write your amount.
+                        .custom-controls-stacked
+                            .custom-control.custom-radio
+                                input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                                label.custom-control-label(for='customRadio1') Need guide
+                            .custom-control.custom-radio
+                                input#customRadio2.custom-control-input(type='radio', name='customRadio')
+                                label.custom-control-label(for='customRadio2') Or not
+                        div.text-right
+                            button.btn.btn-secondary(type='button') Cancel
+                            button.btn.btn-info(type='submit') Apply
+                    script.
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                            });
+                        }, false);
+                        })();
+
+    .section.container-fluid
+        .row
+            .col-md-6.px-5.py-4.bg-cover.text-white(style="background-image: url('https://images.unsplash.com/photo-1547210318-c4ab922fb3a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');")
+                .row
+                    .col-md-9
+                        small small text
+                        h3 subtitle subtitle subtitle
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, incidunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem                    
+                        a.btn.btn-outline-warning Join us
+            .col-md-6.px-5.py-4.bg-cover.text-white(style="background-image: url('https://images.unsplash.com/photo-1523472117130-d8f4350dd9cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');")
+                .row
+                    .col-md-9
+                        small small text
+                        h3 subtitle subtitle subtitle
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, incidunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem                    
+                        a.btn.btn-outline-warning Donate
     
+    footer
+        .container.py-4.d-flex.justify-content-between
+            div
+                | © Copyright 2020 Dean Huang
+            div
+                a(href='#') Github    
+                a.ml-3(href='#') Facebook    
+                a.ml-3(href='#') About    
+
+    #loginModal.modal.fade(tabindex='-1', aria-labelledby='loginModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header.bg-primary.text-white
+                    h5#loginModalLabel.modal-title Login
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                .modal-body
+                    form
+                        .form-group
+                            label(for='exampleInputEmail1') Email address
+                            input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp')
+                            small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                        .form-group
+                            label(for='exampleInputPassword1') Password
+                            input#exampleInputPassword1.form-control(type='password')
+                        .form-group.form-check
+                            input#exampleCheck1.form-check-input(type='checkbox')
+                            label.form-check-label(for='exampleCheck1') Check me out
+                .modal-footer
+                    a.mr-auto(href='#' data-dismiss='modal' data-toggle="modal" data-target="#signupModal") Switch to Signup
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                    button.btn.btn-primary(type='button') Login
+
+    #signupModal.modal.fade(tabindex='-1', aria-labelledby='signupModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header.bg-warning
+                    h5#signupModalLabel.modal-title Signup
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                .modal-body
+                    form
+                        .form-group
+                            label(for='exampleInputEmail1') Email address
+                            input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp')
+                            small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                        .form-group
+                            label(for='exampleInputPassword1') Password
+                            input#exampleInputPassword1.form-control(type='password')
+                        .form-group
+                            label(for='exampleInputPassword1') Confirm password
+                            input#exampleInputPassword1.form-control(type='password')
+                        .form-group.form-check
+                            input#exampleCheck1.form-check-input(type='checkbox')
+                            label.form-check-label(for='exampleCheck1') Agree to the 
+                                a(href='#') Term of services
+                .modal-footer
+                    a.mr-auto(href='#' data-dismiss='modal' data-toggle="modal" data-target="#loginModal") Switch to Login
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                    button.btn.btn-warning(type='button') Singup

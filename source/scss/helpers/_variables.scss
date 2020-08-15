@@ -76,7 +76,7 @@ $dark:          $gray-800 !default;
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary":    rgb(165, 47, 139),
+    "primary":    $primary,
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,

@@ -1,0 +1,25 @@
+.btn {
+    border-width: 2px !important;
+}
+
+// 圖片使用bgi會比較符合我們想要呈現的樣子
+// 我們自訂class名稱，去做調整
+.header-carousel-item {
+    height: 450px;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header {
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, .4);
+    }
+}
+
+@media (min-width: 768px) {
+    .text-md-dark {
+        color: #333;
+    }
+}
